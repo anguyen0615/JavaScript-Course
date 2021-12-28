@@ -70,25 +70,50 @@
 
 // 19. Coding Challenge #2
 
-    let markHeight, markMass, johnHeight, johnMass, markBMI, johnBMI;
+    // let markHeight, markMass, johnHeight, johnMass, markBMI, johnBMI;
 
-    markMass = 78;
-    markHeight = 1.69;
+    // markMass = 78;
+    // markHeight = 1.69;
 
-    johnMass = 92;
-    johnHeight = 1.95;
+    // johnMass = 92;
+    // johnHeight = 1.95;
 
-    markBMI = markMass / markHeight**2;
-    johnBMI = johnMass / johnHeight**2;
+    // markBMI = markMass / markHeight**2;
+    // johnBMI = johnMass / johnHeight**2;
 
-    const compareBMI = (mark, john) => {
-        if(mark > john){
-            return (`Mark's BMI (${mark}), is higher than John's (${john})!`);
-        }else{
-            return (`John's BMI (${john}), BMI is higher than Mark's BMI (${mark})!`);
-        }
-    };
+    // const compareBMI = (mark, john) => {
+    //     if(mark > john){
+    //         return (`Mark's BMI (${mark}), is higher than John's (${john})!`);
+    //     }else{
+    //         return (`John's BMI (${john}), BMI is higher than Mark's BMI (${mark})!`);
+    //     }
+    // };
 
-    let markhigherBMI = compareBMI(markBMI, johnBMI);
+    // let markhigherBMI = compareBMI(markBMI, johnBMI);
 
-    console.log(markhigherBMI);
+    // console.log(markhigherBMI);
+
+
+// 20. Type Conversion and Coercion
+
+    /*
+    Type conversion is when you manually convert one type to another
+    Type coercion, JavaSript converts automatically for us behind the scene
+    Cannot convert booleans
+    */
+
+    // Type conversion
+    // const inputYear = '1991'; 
+    // // String to Number (capital N)
+    // console.log(Number(inputYear), inputYear);
+    // console.log(inputYear + 18)
+
+    // console.log(Number('jonas'));
+    // console.log(typeof NaN);
+
+    // Number to string (start with capital S)
+    // console.log(String(23), 23);
+
+    // Type Coercion
+
+// 25. Coding Challenge #3
