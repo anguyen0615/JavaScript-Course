@@ -118,17 +118,22 @@
 
 // 25. Coding Challenge #3
 
-    let dolphinAverage = (96 + 108 + 89) / 3;
-    let koalasAverage = (88 + 91 + 110) / 3;
+    // let dolphinAverage = (96 + 108 + 89) / 3;
+    // let koalasAverage = (88 + 91 + 110) / 3;
 
-    if ( dolphinAverage && koalasAverage < 100){
-        console.log("No score above 100")
-    } else if ( koalasAverage > dolphinAverage || dolphinAverage < 100){
-        console.log("Koalas wins")
-    } else if(dolphinAverage > koalasAverage || koalasAverage < 100){
-        console.log("Dolphins win!")
-    } else if(dolphinAverage === koalasAverage && dolphinAverage >= 100 && koalasAverage >= 100 ){
-        console.log("It's a draw")
-    } else{
-        console.log("Neither wins")
-    }
+    // if ( dolphinAverage && koalasAverage < 100){
+    //     console.log("No score above 100")
+    // } else if ( koalasAverage > dolphinAverage || dolphinAverage < 100){
+    //     console.log("Koalas wins")
+    // } else if(dolphinAverage > koalasAverage || koalasAverage < 100){
+    //     console.log("Dolphins win!")
+    // } else if(dolphinAverage === koalasAverage && dolphinAverage >= 100 && koalasAverage >= 100 ){
+    //     console.log("It's a draw")
+    // } else{
+    //     console.log("Neither wins")
+    // }
+
+// 29. Coding Challenge #4
+    const bill = 275;
+    const tip = bill >= 50 && bill <=300 ? (bill + (bill * 0.15)) : (bill + (bill * 0.20));
+    console.log(tip);
