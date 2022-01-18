@@ -53,7 +53,7 @@
     // const yearsUntilRetirement = (birthYear, firstName) => {
     //     const age = 2037 - birthYear;
     //     const retirement = 65 - age;
-         // return retirement;
+    //     return retirement;
     //     return `${firstName} retires in ${retirement} years`
     // }
 
@@ -61,15 +61,18 @@
     // // Arrow function does not get a 'this' keyword
 
 // 36. Functions calling other functions
-    function cutFruitPieces(fruit){
-        return fruit * 4;
-    }
+    // function cutFruitPieces(fruit){
+    //     return fruit * 4;
+    // }
 
-    function fruitProcessor(apples, oranges){
-        const applePieces = cutFruitPieces(apples);
-        const orangePieces = cutFruitPieces(oranges);
-        const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`;
-        return juice;
-    }
+    // function fruitProcessor(apples, oranges){
+    //     const applePieces = cutFruitPieces(apples);
+    //     const orangePieces = cutFruitPieces(oranges);
+    //     const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`;
+    //     return juice;
+    // }
     
-    console.log(fruitProcessor(2, 3));
+    // console.log(fruitProcessor(2, 3));
+
+// 38. Coding Challenge #1
+    
