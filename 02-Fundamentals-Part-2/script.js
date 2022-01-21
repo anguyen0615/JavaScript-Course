@@ -21,7 +21,7 @@
     // function is perfect for DRY code
 
 // 34. Function Declartions vs. Expressions
-    // Function declartion -
+    // Function declartion:
     // function calcAge1(birthYear){
     //     return 2037 - birthYear;
     // }
@@ -75,4 +75,22 @@
     // console.log(fruitProcessor(2, 3));
 
 // 38. Coding Challenge #1
-    
+    const calcAverage = (score1, score2, score3) =>{
+        return ( score1 + score2 + score3 ) / 3;
+    };
+
+    const checkWinner = function(avgDolphins, avgKoalas){
+        if(avgDolphins > (avgKoalas * 2)){
+            return `Dolphins win with an avereage of ${avgDolphins}`
+        }
+        else if((avgDolphins *2) < avgKoalas){
+            return `Koalas win with an avereage of ${avgKoalas}`
+        }
+        else{
+            return `No one wins`
+        }
+        
+    };
+
+    console.log(checkWinner(calcAverage(44,23,71), calcAverage(23,34,27)));
+    console.log(checkWinner(calcAverage(85,54,41), calcAverage(23,34,27)));
