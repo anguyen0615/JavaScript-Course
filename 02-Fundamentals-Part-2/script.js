@@ -75,22 +75,113 @@
     // console.log(fruitProcessor(2, 3));
 
 // 38. Coding Challenge #1
-    const calcAverage = (score1, score2, score3) =>{
-        return ( score1 + score2 + score3 ) / 3;
-    };
+    // const calcAverage = (score1, score2, score3) =>{
+    //     return ( score1 + score2 + score3 ) / 3;
+    // };
 
-    const checkWinner = function(avgDolphins, avgKoalas){
-        if(avgDolphins > (avgKoalas * 2)){
-            return `Dolphins win with an avereage of ${avgDolphins}`
-        }
-        else if((avgDolphins *2) < avgKoalas){
-            return `Koalas win with an avereage of ${avgKoalas}`
+    // const checkWinner = function(avgDolphins, avgKoalas){
+    //     if(avgDolphins > (avgKoalas * 2)){
+    //         return `Dolphins win with an avereage of ${avgDolphins}`
+    //     }
+    //     else if((avgDolphins *2) < avgKoalas){
+    //         return `Koalas win with an avereage of ${avgKoalas}`
+    //     }
+    //     else{
+    //         return `No one wins`
+    //     }
+        
+    // };
+
+    // console.log(checkWinner(calcAverage(44,23,71), calcAverage(23,34,27)));
+    // console.log(checkWinner(calcAverage(85,54,41), calcAverage(23,34,27)));
+
+// 39. Introduction to Arrays
+    // const friend1 = 'Michael';
+    // const friend2 = 'Steven';
+    // const friend3 = 'Peter';
+
+    // const friends = ['Michael', 'Steven', 'Peter'];
+    // console.log(friends);
+
+    // const y = new Array(1991, 1984, 2008, 2020); // this is also a way to create an array
+
+    // console.log(friends[0]);
+
+    // console.log(friends.length);
+    // console.log(friends[friends.length - 1]);
+
+    // friends[2] = 'Jay';
+    // console.log(friends);
+
+    // const firstName = 'Andrew'
+    // const andrew = [ firstName, 'Nguyen', 2022-1997, 'Software Engineer', friends];
+    // console.log(andrew);
+
+    // // Exercise
+    // const calcAge = function(birthYear){
+    //     return 2037 - birthYear;
+    // }
+
+    // const years = [1990, 1967, 2002, 2010, 2018];
+
+    // const age1 = calcAge(years[0]);
+    // const age2 = calcAge(years[1]);
+    // const age3 = calcAge(years[2]);
+    // console.log(age1, age2, age3);
+
+    // const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2])];
+    // console.log(ages);
+
+// 40. Basic Array Opperation
+    // const friends = ['Michael', 'Steven', 'Peter'];
+
+    // // Add elements
+    // const newLength = friends.push('Jay'); // adds to end
+    // console.log(friends);
+    // console.log(newLength);
+
+    // friends.unshift('John'); // adds to beginning
+    // console.log(friends);
+
+    // // remove elements
+    // const popped = friends.pop() // removes last element of array
+    // console.log(friends);
+    // console.log(popped);
+
+    // friends.shift();
+    // console.log(friends);
+
+    // // Tells us where the index of element is
+    // // returns 1 or -1
+
+    // console.log(friends.indexOf('Steven'));
+    // console.log(friends.indexOf('Bob'));
+
+    // // ES6 method - returns true or flase, strict equality
+    // friends.push(23);
+    // console.log(friends.includes('Steven'));
+    // console.log(friends.includes('Bob'));
+    // console.log(friends.includes('23'));
+    // console.log(friends.includes(23));
+
+// 41. Coding Challenges #2
+    const calcTip = (bill) => {
+        if(bill >= 50 && bill <= 300){
+            return bill * 0.15;
         }
         else{
-            return `No one wins`
+            return bill * 0.20;
         }
-        
     };
 
-    console.log(checkWinner(calcAverage(44,23,71), calcAverage(23,34,27)));
-    console.log(checkWinner(calcAverage(85,54,41), calcAverage(23,34,27)));
+    const bills = [125, 555, 44];
+    const tips = []
+    const total = []
+    
+    for(let i = 0; i < bills.length; i++){
+        tips.push(calcTip(bills[i]));
+        total.push(bills[i] + tips[i]);
+    }
+    console.log(bills);
+    console.log(tips);
+    console.log(total);
