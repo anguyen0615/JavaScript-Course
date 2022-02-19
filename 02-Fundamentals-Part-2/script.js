@@ -165,23 +165,62 @@
     // console.log(friends.includes(23));
 
 // 41. Coding Challenges #2
-    const calcTip = (bill) => {
-        if(bill >= 50 && bill <= 300){
-            return bill * 0.15;
-        }
-        else{
-            return bill * 0.20;
-        }
+    // const calcTip = (bill) => {
+    //     if(bill >= 50 && bill <= 300){
+    //         return bill * 0.15;
+    //     }
+    //     else{
+    //         return bill * 0.20;
+    //     }
+    // };
+
+    // const bills = [125, 555, 44];
+    // const tips = []
+    // const total = []
+    
+    // for(let i = 0; i < bills.length; i++){
+    //     tips.push(calcTip(bills[i]));
+    //     total.push(bills[i] + tips[i]);
+    // }
+    // console.log(bills);
+    // console.log(tips);
+    // console.log(total);
+
+// 42. Intro to Objects
+    const andrew = {
+        // Property: value
+        firstName: 'Andrew',
+        lastName: 'Nguyen',
+        age: 2022-1997,
+        job: 'Software Engineer',
+        friends: ['Michael', 'Steven', 'Peter']
     };
 
-    const bills = [125, 555, 44];
-    const tips = []
-    const total = []
+// 43. Dot vs Bracket notation
+    //dot notation:
+    // console.log(andrew.lastName);
+
+    // // bracket notation:
+    // console.log(andrew['lastName']);
+
+    //  const nameKey = 'Name';
+
+    //  // you can put any expression in the brackets - does not work with the dot notation
+    //  console.log(andrew['first' + nameKey]);
+    //  console.log(andrew['last' + nameKey]);
     
-    for(let i = 0; i < bills.length; i++){
-        tips.push(calcTip(bills[i]));
-        total.push(bills[i] + tips[i]);
-    }
-    console.log(bills);
-    console.log(tips);
-    console.log(total);
+    //  const interestedIn = prompt('What do you want to know?');
+    //  console.log(interestedIn);
+     
+    //  if(andrew[interestedIn]){
+    //     console.log(andrew[interestedIn]);
+    //  }else{
+    //      console.log('nothing to show')
+    //  }
+
+    //  andrew.location = 'Kansas';
+    //  andrew['phone'] = 'AT&T';
+    //  console.log(andrew);
+
+     // Challenge
+     console.log(`${andrew.firstName} has ${andrew.friends.length} friends, and his best friend is called ${andrew.friends[0]}`);
