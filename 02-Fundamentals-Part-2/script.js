@@ -187,14 +187,14 @@
     // console.log(total);
 
 // 42. Intro to Objects
-const andrew = {
-    // Property: value
-    firstName: 'Andrew',
-    lastName: 'Nguyen',
-    age: 2022-1997,
-    job: 'Software Engineer',
-    friends: ['Michael', 'Steven', 'Peter']
-};
+// const andrew = {
+//     // Property: value
+//     firstName: 'Andrew',
+//     lastName: 'Nguyen',
+//     age: 2022-1997,
+//     job: 'Software Engineer',
+//     friends: ['Michael', 'Steven', 'Peter']
+// };
 
 // 43. Dot vs Bracket notation
 //dot notation:
@@ -223,4 +223,27 @@ const andrew = {
 //  console.log(andrew);
 
  // Challenge
- console.log(`${andrew.firstName} has ${andrew.friends.length} friends, and his best friend is called ${andrew.friends[0]}`);
+//  console.log(`${andrew.firstName} has ${andrew.friends.length} friends, and his best friend is called ${andrew.friends[0]}`);
+
+ // 44. Object Methods
+    
+    const andrew = {
+        // Property: value
+        firstName: 'Andrew',
+        lastName: 'Nguyen',
+        birthYear: 1997,
+        job: 'Software Engineer',
+        friends: ['Michael', 'Steven', 'Peter'],
+        hasDriversLicense: true,
+
+        // not DRY:
+        // calcAge: function(birthYear){
+        //     return 2037-birthYear;
+        // }
+
+        calcAge: function(){
+            return 2037 - this.birthYear;
+        }
+    };
+
+    console.log(andrew.calcAge());
