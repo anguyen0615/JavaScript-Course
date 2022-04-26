@@ -397,22 +397,35 @@
     // }
 
 // 50. Coding challenge #4
-    const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-    const tips = [];
-    const total = [];
+    // const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+    // const tips = [];
+    // const total = [];
 
-    const calcTip = (bill) => {
-        if(bill >= 50 && bill <= 300){
-            return bill * 0.15;
-        }
-        else{
-            return bill * 0.20;
-        }
-    };
+    // const calcTip = (bill) => {
+    //     if(bill >= 50 && bill <= 300){
+    //         return bill * 0.15;
+    //     }
+    //     else{
+    //         return bill * 0.20;
+    //     }
+    // };
 
-    for(let i = 0; i < bills.length; i++){
-        tips.push[calcTip(bills[i])];
-        console.log(tips)
-    }
+    // for(let i = 0; i < bills.length; i++){
+    //     tips.push(calcTip(bills[i]));
+    //     total.push(calcTip(bills[i]) + bills[i]);
+    // }
 
-    
+    // console.log(tips);
+    // console.log(total);
+
+    // const calcAverage = (arr) => {
+    //     let average = 0;
+    //     let sum = 0;
+    //     for(let i = 0; i < arr.length; i++){
+    //         sum += arr[i];
+    //     };
+    //     average = sum / arr.length
+    //     return average
+    // };
+
+    // console.log(calcAverage(total))
