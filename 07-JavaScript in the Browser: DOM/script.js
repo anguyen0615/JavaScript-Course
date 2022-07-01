@@ -20,9 +20,18 @@ document.querySelector(".guess").value = 23;
 */
 
 // 73. Handling Click Event
+// 74. Implementing game logic
 const checkBtn = document.querySelector(".check");
-const guess = document.querySelector(".guess");
+const message = document.querySelector(".message");
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
+document.querySelector(".number").textContent = secretNumber;
 
 checkBtn.addEventListener("click", function () {
-  console.log(guess.value);
+  const guess = Number(document.querySelector(".guess").value);
+  if(!guess){
+    message.textContent = "Please enter a number..";
+  }
+  else if(guess === secretNumber){
+    message.textContent = "You guessed the secret number!!";
+  }
 });
