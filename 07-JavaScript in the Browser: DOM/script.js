@@ -37,13 +37,25 @@ checkBtn.addEventListener("click", function () {
     message.textContent = "Correct number!";
   }
   else if(guess > secretNumber){
-    message.textContent = "Too high!";
-    score--;
-    scoreValue.textContent = score;
+    if(score > 1){
+      message.textContent = "Too high!";
+      score--;
+      scoreValue.textContent = score;
+    }
+    else{
+      message.textContent = "You lost the game!"
+      scoreValue.textContent = 0;
+    }
   }
   else if(guess < secretNumber){
-    message.textContent = "Too low!"
-    score--;
-    scoreValue.textContent = score;
+    if(score > 1){
+      message.textContent = "Too low!"
+      score--;
+      scoreValue.textContent = score;
+    }
+    else{
+      message.textContent = "You lost the game!";
+      scoreValue.textContent = 0;
+    }
   }
 });
